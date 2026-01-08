@@ -15,7 +15,7 @@ const InputSearch = () => {
     router.push(`?${newParams.toString()}`);
   };
   return (
-    <form onSubmit={(e) => handleSubmit(e)} className="mb-5 text-center">
+    <form onSubmit={(e) => handleSubmit(e)} className="mb-15 text-center">
       <input
         name="search"
         type="text"
