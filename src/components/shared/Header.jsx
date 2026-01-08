@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <div className="flex justify-between py-4 bg-stone-700 text-white px-6 rounded-xl rounded-t-none">
+    <div className="flex justify-between py-4 bg-stone-700 text-white px-6">
       <Logo />
       <div className="flex gap-4">
         <Link href="/foods" className="font-semibold">
