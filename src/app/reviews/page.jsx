@@ -9,7 +9,10 @@ const getReviews = async () => {
   const data = await res.json();
   return data.reviews || [];
 };
-
+export const metadata = {
+  title: "Reviews",
+  description: "What our users say",
+};
 export default async function Reviews() {
   const reviews = await getReviews();
 

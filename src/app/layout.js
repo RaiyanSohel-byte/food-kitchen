@@ -14,7 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "FoodKitchen",
+  title: {
+    default: "FoodKitchen",
+    template: "%s | FoodKitchen",
+  },
   description: "A food restaurant app",
 };
 
