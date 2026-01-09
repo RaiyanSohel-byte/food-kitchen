@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CartButton from "../buttons/CartButton";
+import Image from "next/image";
 
 export default function FoodCard({ food }) {
   return (
@@ -8,7 +9,9 @@ export default function FoodCard({ food }) {
       className="group overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
     >
       <div className="relative h-56 overflow-hidden">
-        <img
+        <Image
+          width={300}
+          height={150}
           src={food.foodImg}
           alt={food.title}
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"

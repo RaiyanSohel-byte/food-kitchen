@@ -1,14 +1,21 @@
+import { Anek_Bangla } from "next/font/google";
+import Image from "next/image";
 import React from "react";
 
+const anek = Anek_Bangla({
+  weight: ["400"],
+});
 const ReviewsCard = ({ review }) => {
   return (
     <div
       key={review.id}
-      className="rounded-2xl bg-white p-6 shadow-sm transition hover:shadow-md"
+      className={`${anek.className} rounded-2xl bg-white p-6 shadow-sm transition hover:shadow-md`}
     >
       {/* User Info */}
       <div className="flex items-center gap-4">
-        <img
+        <Image
+          width={48}
+          height={48}
           src={review.photo}
           alt={review.user}
           className="h-12 w-12 rounded-full object-cover"
